@@ -1,0 +1,43 @@
+.container {
+  display: flex;
+  font-size: 20px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  color: #FF9D1C;
+  align-items: center;
+  border-bottom: 2px solid #262627;
+  box-shadow: 1px 1px 0 0 rgba(125, 123, 124, 0.5);
+  background-color: rgba(38, 38, 39, 0.9);
+  justify-content: space-around;
+
+  i {
+    margin: 3px 2px 0 0;
+    padding: 2px;
+
+  }
+
+  .mid-nav {
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
+  }
+
+}
+
+.search {
+  flex: 1;
+}
+
+.bg-image{
+  background-image: url(/assets/pexels-pavel-1200.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+@media (max-width: 850px){
+  .container {
+    flex-direction: column;
+    height: 25vh;
+}
+}

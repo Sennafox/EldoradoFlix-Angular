@@ -1,0 +1,115 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 10px;
+  border-radius: 4px;
+  box-shadow: 0 0 5px #FF9D1C;
+  background-color: #262627;
+  background-size: contain;
+  max-width: 200px;
+
+
+  &:hover {
+    box-shadow: inset 0px 0px 5px 1px rgba(125, 123, 124, 1);
+  }
+
+  img{
+    width: 100%;
+    max-width: 210px;
+    margin:auto;
+    padding: 1px;
+  }
+
+}
+
+.card-description {
+
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  color: #FF9D1C;
+  max-width: 200px;
+  transition: 0.3s;
+  padding: 5px;
+
+
+  .title{
+    color: aliceblue;
+    font-weight: bold;
+    text-align: justify;
+    font-size: 0.9em;
+  }
+
+  .left{
+    text-align: left;
+    font-size: 0.8em;
+    padding: 2px;
+  }
+
+  &:hover {
+    color: white;
+  }
+}
+
+
+
+.button {
+  padding:10px;
+}
+
+.button1 {
+  padding:2px;
+  font-size: .5em;
+  margin: auto;
+  display: inline-block;
+
+  button {
+    background-color: #25F7C6;
+    color: #FF9D1C;
+
+    &:hover {
+      background-color: #FF9D1C;
+      color:  #25F7C6;
+    }
+  }
+
+
+}
+
+button {
+  border-radius: 20px;
+  background-color: #FF9D1C;
+  color: white;
+  border: none;
+  margin: 2px;
+  padding: 10px 15px;
+  cursor: pointer;
+  transition: 0.3s;
+  text-decoration: none;
+  font-family: 'mulish', sans-serif;
+  font-weight: bold;
+
+
+  h1{
+    color:#FF9D1C
+  }
+
+  a {
+    position: relative;
+    display: inline-block;
+    padding: 15px 30px;
+    margin: 5px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: 0.5s;
+
+  }
+  &:hover {
+    background-color:#262627;
+    opacity:0.9;
+    color:#FF9D1C;
+    box-shadow: 0 0 5px #FF9D1C
+  }
+}

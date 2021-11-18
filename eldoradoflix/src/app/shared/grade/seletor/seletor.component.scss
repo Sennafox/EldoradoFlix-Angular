@@ -1,0 +1,51 @@
+.separator {
+  width: 100%;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin: auto;
+
+  .title {
+    padding: 15px;
+
+    i{
+      margin-right: 5px;
+    }
+  }
+
+}
+
+
+
+/*Filtro*/
+
+select {
+  margin: 10px;
+  background-color: #262627;
+  color: #FF9D1C;
+  font-family: 'mulish', sans-serif;
+  box-shadow: 0 0 5px #FF9D1C;
+  border-radius: 10px;
+  width: 200px;
+  text-align: center;
+  font-size: 0.7em;
+}
+
+.select{
+  display: flex;
+  flex-direction: row;
+  appearance: none;
+  outline: 0;
+  box-shadow: none;
+  border: 0!important;
+  background-color: #262627;
+  background-image: none;
+  color: #FF9D1C;
+  font-size: 1.5em;
+
+  &::-ms-expand{
+    display:none;
+  }
+}

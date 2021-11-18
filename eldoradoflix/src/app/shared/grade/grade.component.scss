@@ -1,0 +1,15 @@
+
+.movie-grade{
+  width: 100%;
+  margin: auto;
+}
+
+.grade {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  background-color:#262627;
+  box-shadow: inset 0 3px 3px #101011;
+  padding: 5px;
+
+}

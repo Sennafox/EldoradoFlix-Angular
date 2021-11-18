@@ -1,0 +1,41 @@
+.footer{
+  background-color: #FF9D1C;
+  padding: 10px 0;
+  line-height: 1.5;
+}
+
+.f-container{
+  background-color: #FF9D1C;
+  width: 100%;
+  margin: auto;
+
+}
+
+.footer-row{
+  text-align: center;
+  background-color: #FF9D1C;
+  display:flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: auto;
+}
+
+.footer-col {
+  min-width: 220px;
+
+  &:hover {
+    color:azure;
+  }
+
+}
+
+h2{
+  text-align: center;
+  font-size: 0.7em;
+}
+
+@media (max-width: 400px){
+  .footer {
+    flex-direction: column;
+  }
+}
