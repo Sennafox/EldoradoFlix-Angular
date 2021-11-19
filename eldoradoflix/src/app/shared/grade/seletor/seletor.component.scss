@@ -26,11 +26,13 @@ select {
   background-color: #262627;
   color: #FF9D1C;
   font-family: 'mulish', sans-serif;
+  font-weight: bold;
   box-shadow: 0 0 5px #FF9D1C;
   border-radius: 10px;
   width: 200px;
+  height: 30px;
   text-align: center;
-  font-size: 0.7em;
+  font-size: 1.5em;
 }
 
 .select{
@@ -43,7 +45,8 @@ select {
   background-color: #262627;
   background-image: none;
   color: #FF9D1C;
-  font-size: 1.5em;
+  font-size: 0.7em;
+  align-items: center;
 
   &::-ms-expand{
     display:none;
