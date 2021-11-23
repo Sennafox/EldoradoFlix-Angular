@@ -1,5 +1,5 @@
-import { Usuario } from './Usuario';
-import {Entity, PrimaryGeneratedColumn, Column} from "typeorm";
+import {Entity, PrimaryGeneratedColumn, Column, OneToMany} from "typeorm";
+import { Lancamento } from "./Lancamento";
 
 @Entity()
 export class Usuario {
@@ -17,5 +17,8 @@ export class Usuario {
 
     @Column()
     password: string;
+
+    @OneToMany(()=> Lancamento, lancamento => lancamento.usuario)
+    lancamentos: Lancamento[];
     
 }

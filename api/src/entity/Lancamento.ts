@@ -5,7 +5,7 @@ import { Entity } from 'typeorm';
 @Entity()
 export class Lancamento {
 
-    constructor(nome: string, password: string, usuario = Usuario) {
+    constructor(nome: string, password: string, usuario: Usuario) {
 
         this.nome = nome;
         this.password = password;
@@ -15,7 +15,7 @@ export class Lancamento {
     @PrimaryGeneratedColumn()
     id:number;
 
-    @Column({type: 'float' })
+    @Column()
     nome: string;
 
     @Column()

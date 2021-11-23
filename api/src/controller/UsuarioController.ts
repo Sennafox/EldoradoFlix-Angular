@@ -1,5 +1,5 @@
 import { getManager } from "typeorm";
-import {Usuario} from "../entity/Usuario";
+import { Usuario } from "../entity/Usuario";
 
 export class UsuarioController {
     
@@ -12,4 +12,11 @@ export class UsuarioController {
         const usuario = await getManager().findOne(Usuario, id);
         return usuario;
     }
+
+    async recuperaLancamentosDoUsuario(id:number){
+        const usuario = await getManager().findOne(Usuario, id, {
+            relations:['lancamentos']
+        });
+        return usuario.lancamentos;        
+    }   
 }

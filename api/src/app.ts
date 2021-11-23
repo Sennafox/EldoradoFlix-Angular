@@ -4,8 +4,8 @@ import * as cors from 'cors';
 import * as logger from 'morgan';
 
 import { conectarServidorNoBD } from './config/db';
-import { routerUsuario } from './routes/usuario';
-import { routerLancamento } from './routes/lancamento';
+import { routerUsuario } from './route/usuario';
+import { routerLancamento } from './route/lancamento';
 
 
 export const app = express();
@@ -19,7 +19,5 @@ app.use(logger('dev'));
 conectarServidorNoBD();
 
 app.use('/usuario', routerUsuario);
-
-app.use('/lancamento', routerLancamento)
-
-app.use('/', (req, res) => res.send('API do app julius'))
+app.use('/lancamento', routerLancamento);
+app.use('/', (req, res) => res.send('API do app julius'));

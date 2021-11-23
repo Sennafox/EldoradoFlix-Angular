@@ -5,6 +5,6 @@ export const conectarServidorNoBD = async () => {
     console.log(`App connectado ao BD ${conexao.options.database}`);
     
     process.on('SIGINT', () =>{
-        conexao.close().then(()=> console.log('conexão com o BD fechada'));
+        conexao.close().then(() => console.log('conexão com o BD fechada'))
     });
 };
