@@ -12,13 +12,16 @@ export class LoginComponent implements OnInit {
 
   usuario = '';
   senha = '';
+  userName =[''];
+  password = [''];
 
   constructor(
     private authService: AuthService,
-    private router: Router
+    private router: Router,
     ) {}
 
   ngOnInit(): void {
+
   }
 
   login() {
@@ -30,6 +33,6 @@ export class LoginComponent implements OnInit {
           alert("Usuário ou senha inválido");
           console.log(error);
       }
-    );
+    )
   }
 }

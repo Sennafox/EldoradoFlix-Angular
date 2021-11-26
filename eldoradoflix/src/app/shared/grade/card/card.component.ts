@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
-const API = 'http://localhost:3001';
+const API = 'http://localhost:3000';
 @Component({
   selector: 'app-card',
   templateUrl: './card.component.html',

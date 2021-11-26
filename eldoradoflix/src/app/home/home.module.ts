@@ -1,7 +1,9 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { HomeRoutingModule } from './home-routing.module';
+import { MensagemModule } from '../mensagem/mensagem.module';
 
 import { HomeComponent } from './home.component';
 import { BannerComponent } from '../shared/banner/banner.component';
@@ -12,8 +14,8 @@ import { LoginComponent } from './login/login.component';
 import { NavBarComponent } from '../shared/nav-bar/nav-bar.component';
 import { PaginationComponent } from '../shared/pagination/pagination.component';
 import { SeletorComponent } from '../shared/grade/seletor/seletor.component';
-import { FormsModule } from '@angular/forms';
-import { MensagemModule } from '../mensagem/mensagem.module';
+import { NovoUsuarioComponent } from './novo-usuario/novo-usuario.component';
+
 
 @NgModule({
   declarations: [
@@ -25,13 +27,15 @@ import { MensagemModule } from '../mensagem/mensagem.module';
     FooterComponent,
     PaginationComponent,
     LoginComponent,
-    HomeComponent
+    HomeComponent,
+    NovoUsuarioComponent
   ],
   imports: [
     CommonModule,
     HomeRoutingModule,
     FormsModule,
-    MensagemModule
+    MensagemModule,
+    ReactiveFormsModule
   ],
   exports: [
     HomeComponent

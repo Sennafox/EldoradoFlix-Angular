@@ -1,10 +1,9 @@
-import { FooterComponent } from './../../shared/footer/footer.component';
-import { NavBarComponent } from './../../shared/nav-bar/nav-bar.component';
+import { NovoUsuarioComponent } from './../novo-usuario/novo-usuario.component';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { LoginRoutingModule } from './login-routing.module';
-import { FormsModule } from '@angular/forms';
+
 
 
 @NgModule({
@@ -12,7 +11,7 @@ import { FormsModule } from '@angular/forms';
   ],
   imports: [
     CommonModule,
-    LoginRoutingModule,
+    LoginRoutingModule
   ]
 })
 export class LoginModule { }

@@ -10,72 +10,90 @@
 
     <div class="col-1">
 
-      <i class='bx bxs-edit-alt'></i>
+
       <h3 class="text-center">Cadastre-se!</h3>
 
-      <form (ngSubmit)="login()">
+      <form [formGroup]="novoUsuarioForm" (Submit)="cadastrar()">
 
         <div>
           <span class="subtitle">Nome do usuário</span>
-          <input type="text" 
-          class="form-control" 
-          placeholder="Nome do usuário" 
-          [(ngModel)]="usuario" 
-          name="usuario"
-          #campoUsuario = "ngModel"
-          required/>
+          <input type="text"
+          class="form-control"
+          placeholder="Nome do usuário"
+          formControlName="userName"
+          >
         </div>
 
-        <app-mensagem 
-        *ngIf="campoUsuario.invalid"
-        mensagem="Usuário obrigatório"></app-mensagem>
-        
+        <!--<app-mensagem
+        *ngIf="campoNovoUsuario.invalid && campoNovoUsuario.touched"
+        mensagem="Insira o nova usuário">
+        </app-mensagem>-->
+
 
         <div class="form-group">
           <span class="subtitle">Senha do usuário</span>
-          <input type="password" 
-          class="form-control" 
-          placeholder="Senha" 
-          [(ngModel)]="senha" 
+          <input type="password"
+          class="form-control"
+          placeholder="Senha"
+          [(ngModel)]="senha"
           name="senha"
-          #campoUsuario = "ngModel"
+          #campoNovaSenha = "ngModel"
           required
           />
+          <app-mensagem
+        *ngIf="campoNovaSenha.invalid && campoNovaSenha.touched"
+        mensagem="Insira a nova senha">
+        </app-mensagem>
         </div>
-          <app-mensagem 
-          *ngIf="campoSenha.invalid"
-          mensagem="Senha obrigatória"></app-mensagem>
 
-        <button type="submit" 
-        class="btn">Cadastre-se
+        <button type="submit"
+        class="btn"
+        >
+        Cadastre-se
         </button>
 
       </form>
       </div>
       <div class="col-1">
 
-        <i class='bx bx-log-in'></i>
         <h3>Faça seu login!</h3>
 
         <form (ngSubmit)="login()">
           <div>
             <span class="subtitle">Nome do usuário</span>
-            <input class="form-control" 
-            placeholder="Nome do usuário" 
-            [(ngModel)]="usuario" 
-            name="usuario"/>
+            <input class="form-control"
+            placeholder="Nome do usuário"
+            [(ngModel)]="usuario"
+            name="usuario"
+            #campoUsuario = "ngModel"
+            required
+            />
           </div>
+
+          <app-mensagem
+          *ngIf="campoUsuario.invalid && campoUsuario.touched"
+          mensagem="Usuário obrigatório">
+        </app-mensagem>
 
           <div class="form-group">
             <span class="subtitle">Senha do usuário</span>
-            <input type="password" 
-            class="form-control" 
-            placeholder="Senha" 
-            [(ngModel)]="senha" 
-            name="senha"/>
+            <input type="password"
+            class="form-control"
+            placeholder="Senha"
+            [(ngModel)]="senha"
+            name="senha"
+            #campoSenha = "ngModel"
+            required
+            />
+            <app-mensagem
+            *ngIf="campoSenha.invalid && campoSenha.touched"
+            mensagem="Senha obrigatória">
+            </app-mensagem>
           </div>
 
-          <button type="submit" 
+
+
+          <button type="submit"
           class="btn">Login</button>
         </form>
 

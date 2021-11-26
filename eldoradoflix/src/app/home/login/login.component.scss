@@ -43,20 +43,18 @@ form {
 }
 
 .col-1 {
+
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  padding: 10px;
   width: 300px;
   max-width: 300px;
-  justify-self: center;
-  margin: 10px;
   border: solid 1px #6b6b70;
   border-radius: 5px;
   height: 55vh;
   box-shadow: 0 0 3px 2px #FF9D1C;
   box-sizing: border-box;
+  margin: 10px;
 
 
     &:hover {
@@ -87,6 +85,3 @@ button {
     }
 }
 
-.form-control {
-  width: 100%;
-}
