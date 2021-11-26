@@ -10,7 +10,7 @@ import { Router } from '@angular/router';
 
 export class LoginComponent implements OnInit {
 
-  usuario = 'www';
+  usuario = '';
   senha = '';
 
   constructor(
@@ -22,7 +22,14 @@ export class LoginComponent implements OnInit {
   }
 
   login() {
-    console.log(this.usuario);
-    console.log(this.senha);
+    this.authService.autenticar(this.usuario, this.senha).subscribe(
+      () => {
+        this.router.navigate(['home']);
+      },
+       (error) => {
+          alert("Usuário ou senha inválido");
+          console.log(error);
+      }
+    );
   }
 }

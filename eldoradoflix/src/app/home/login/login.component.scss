@@ -10,6 +10,24 @@
   color:#FFFFFF;
 }
 
+.subtitle {
+  font-size: 0.7em;
+  text-align: left;
+  font-weight: bold;
+  color:#FFFFFF;
+}
+
+form {
+  width: 50%;
+
+  input{
+    height:30px;
+    border: solid 1px #635e59;
+    box-shadow: inset 1px 1px 1px 1px #635e59;
+    border-radius: 10px;
+  }
+}
+
 .col {
   color: #FF9D1C;
   display:flex;
@@ -29,6 +47,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 10px;
   width: 300px;
   max-width: 300px;
   justify-self: center;

@@ -13,6 +13,7 @@ import { NavBarComponent } from '../shared/nav-bar/nav-bar.component';
 import { PaginationComponent } from '../shared/pagination/pagination.component';
 import { SeletorComponent } from '../shared/grade/seletor/seletor.component';
 import { FormsModule } from '@angular/forms';
+import { MensagemModule } from '../mensagem/mensagem.module';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { FormsModule } from '@angular/forms';
   imports: [
     CommonModule,
     HomeRoutingModule,
-    FormsModule
+    FormsModule,
+    MensagemModule
   ],
   exports: [
     HomeComponent
