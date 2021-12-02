@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { Filmes } from './filmes/filmes';
 
 @Component({
   selector: 'app-grade',
@@ -7,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class GradeComponent implements OnInit {
 
+  @Input() filmes!: Filmes;
   constructor() { }
 
   ngOnInit(): void {

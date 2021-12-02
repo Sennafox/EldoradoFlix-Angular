@@ -1,1 +1,48 @@
-<p>novo-usuario works!</p>
+<div class="col-1">
+
+
+    <h3 class="text-center">Cadastre-se!</h3>
+
+    <form [formGroup]="novoUsuarioForm" (Submit)="cadastrar()">
+
+      <div>
+        <span class="subtitle">Nome do usuário</span>
+        <input type="text"
+        class="form-control"
+        placeholder="Nome do usuário"
+        formControlName="userName"
+        >
+      </div>
+
+      <!--<app-mensagem
+      *ngIf="campoNovoUsuario.invalid && campoNovoUsuario.touched"
+      mensagem="Insira o nova usuário">
+      </app-mensagem>
+
+
+      <div class="form-group">
+        <span class="subtitle">Senha do usuário</span>
+        <input type="password"
+        class="form-control"
+        placeholder="Senha"
+        [(ngModel)]="senha"
+        name="senha"
+        #campoNovaSenha = "ngModel"
+        required
+        />
+        <app-mensagem
+      *ngIf="campoNovaSenha.invalid && campoNovaSenha.touched"
+      mensagem="Insira a nova senha">
+      </app-mensagem>
+      
+      </div>-->
+
+      <button type="submit"
+      class="btn"
+      >
+      Cadastre-se
+      </button>
+
+    </form>
+    </div>
+    <footer></footer>

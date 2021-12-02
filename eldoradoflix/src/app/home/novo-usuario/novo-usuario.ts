@@ -1,4 +1,6 @@
 export interface NovoUsuario {
-  userName: String;
-  password: String;
+  email: string;
+  fullName: string;
+  userName: string;
+  password: string;
 }

@@ -2,8 +2,8 @@
 <div class="card" id="card">
 
   <div class="card-description">
-          <h1>Nome do Filme</h1>
-          <img src="Src/images/filmes_logo.jpg">
+          <h1 *ngIf="titulo">{{ titulo }}</h1>
+          <ng-content></ng-content>
           <h3>Duração: --</h3>
           <h5>Avaliação --</h5>
           <h3>Genero: --</h3>

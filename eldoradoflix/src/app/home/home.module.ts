@@ -15,6 +15,7 @@ import { NavBarComponent } from '../shared/nav-bar/nav-bar.component';
 import { PaginationComponent } from '../shared/pagination/pagination.component';
 import { SeletorComponent } from '../shared/grade/seletor/seletor.component';
 import { NovoUsuarioComponent } from './novo-usuario/novo-usuario.component';
+import { FilmesComponent } from '../shared/grade/filmes/filmes.component';
 
 
 @NgModule({
@@ -28,7 +29,8 @@ import { NovoUsuarioComponent } from './novo-usuario/novo-usuario.component';
     PaginationComponent,
     LoginComponent,
     HomeComponent,
-    NovoUsuarioComponent
+    NovoUsuarioComponent,
+    FilmesComponent
   ],
   imports: [
     CommonModule,

@@ -1,8 +1,13 @@
 <div class="movie-grade">
-
-  <div class="grade" id="grade">
+  <div class="grade" id="grade" *ngFor= filme of filmes>
       <app-seletor></app-seletor>
-      <div class="card-flex"><app-card></app-card></div>
+      <div class="card-flex">
+        <app-card>
+          <app-filmes 
+          [url]="filmes.url"
+          [descricao]="filmes.description"></app-filmes>
+        </app-card>
+      </div>
   </div>
 </div>
 

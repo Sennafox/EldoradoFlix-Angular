@@ -5,10 +5,11 @@ import { CardComponent } from './card.component';
 
 
 @NgModule({
-  declarations: [
+  declarations: [CardComponent
   ],
   imports: [
     CommonModule
-  ]
+  ],
+  exports: [CardComponent]
 })
 export class CardModule { }

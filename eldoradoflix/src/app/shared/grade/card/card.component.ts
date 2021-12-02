@@ -1,6 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
-const API = 'http://localhost:3000';
+const API = 'http://localhost:3001';
 @Component({
   selector: 'app-card',
   templateUrl: './card.component.html',
@@ -8,6 +8,7 @@ const API = 'http://localhost:3000';
 })
 export class CardComponent implements OnInit {
 
+  @Input() titulo = '';
 
   constructor() {}
 

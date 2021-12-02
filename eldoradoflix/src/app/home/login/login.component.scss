@@ -10,6 +10,18 @@
   color:#FFFFFF;
 }
 
+.title2{
+  
+  a{
+    text-decoration: none;
+    color:#FF9D1C;
+    transition: 1s;
+    &:hover{
+      color:#FFFFFF;
+    }
+  }
+}
+
 .subtitle {
   font-size: 0.7em;
   text-align: left;

@@ -4,56 +4,10 @@
   <div class="col">
     <div>
       <img src="/assets/eldorado 300x180.png"/>
-      <h4 class="title">A maior plataforma de filmess online da america latina!</h4>
-      <h5 class="title2">Cadastre-se para ter acesso aos nosso conteúdo</h5>
+      <h4 class="title">A maior plataforma de filmes online da america latina!</h4>
+      <h5 class="title2"><a [routerLink]="['novousuario']">Clique aqui e cadastre-se para ter acesso aos nosso conteúdo</a></h5>
     </div>
 
-    <div class="col-1">
-
-
-      <h3 class="text-center">Cadastre-se!</h3>
-
-      <form [formGroup]="novoUsuarioForm" (Submit)="cadastrar()">
-
-        <div>
-          <span class="subtitle">Nome do usuário</span>
-          <input type="text"
-          class="form-control"
-          placeholder="Nome do usuário"
-          formControlName="userName"
-          >
-        </div>
-
-        <!--<app-mensagem
-        *ngIf="campoNovoUsuario.invalid && campoNovoUsuario.touched"
-        mensagem="Insira o nova usuário">
-        </app-mensagem>-->
-
-
-        <div class="form-group">
-          <span class="subtitle">Senha do usuário</span>
-          <input type="password"
-          class="form-control"
-          placeholder="Senha"
-          [(ngModel)]="senha"
-          name="senha"
-          #campoNovaSenha = "ngModel"
-          required
-          />
-          <app-mensagem
-        *ngIf="campoNovaSenha.invalid && campoNovaSenha.touched"
-        mensagem="Insira a nova senha">
-        </app-mensagem>
-        </div>
-
-        <button type="submit"
-        class="btn"
-        >
-        Cadastre-se
-        </button>
-
-      </form>
-      </div>
       <div class="col-1">
 
         <h3>Faça seu login!</h3>
